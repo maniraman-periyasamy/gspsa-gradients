@@ -1,15 +1,15 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='gspsa_gradients',
+    name='gspsa-gradients',
     version='1.0',
     packages=find_packages(),
-    py_modules=['gspsa_gradients'],
+    py_modules=['gspsa-gradients'],
     install_requires=[
         'numpy',
     ],
     extras_require={
-        'tfq': ['tensorflow-quantum'],
-        'qiskit': ['qiskit'],
+        'tfq': ['tensorflow-quantum', 'tensorflow'],
+        'qiskit': ['qiskit', 'qiskit-algorithms'],
     },
 )
