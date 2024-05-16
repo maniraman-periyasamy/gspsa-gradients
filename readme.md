@@ -42,6 +42,8 @@ The package can be installed via pip:
 
 ## Usage and Examples
 
+### Usage
+
 - Qiskit version
     ```python
     
@@ -64,3 +66,36 @@ The package can be installed via pip:
 
     ...
     ```
+### Example
+
+Qml examples are provided in the examples folder
+
+
+
+## Acknowledgements
+
+We use ``qiskit`` software framework: https://github.com/Qiskit and ``tensorflow-quantum``software framework: https://github.com/tensorflow/quantum
+
+
+## Citation
+
+If you use the `gspsa-gradients` or results from the paper, please cite our work as
+
+```
+@misc{periyasamy2024guidedspsa,
+      title={Guided-SPSA: Simultaneous Perturbation Stochastic Approximation assisted by the Parameter Shift Rule}, 
+      author={Maniraman Periyasamy and Axel Plinge and Christopher Mutschler and Daniel D. Scherer and Wolfgang Mauerer},
+      year={2024},
+      eprint={2404.15751},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+```
+
+## Version History
+
+Initial release (v0.1.0): May 2024
+
+## License
+
+Apache 2.0 License
