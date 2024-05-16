@@ -1,5 +1,9 @@
 # Guide-SPSA Gradients
 
+[![Static Badge](https://img.shields.io/badge/arXiv-2404.15751-red)](https://arxiv.org/abs/2404.15751)  [![Static Badge](https://img.shields.io/badge/PyPI-pip_install_variational--lse--solver-blue)](https://pypi.org/project/variational-lse-solver/)
+
+
+
 This repository implements the Guided-SPSA gradients introduced in "[Guided-SPSA: Simultaneous Perturbation Stochastic Approximation assisted by the Parameter Shift Rule by M. Periyasamy et. al.](https://arxiv.org/abs/2404.15751)"
 
 ## Features
