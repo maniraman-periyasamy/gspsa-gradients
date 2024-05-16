@@ -1,4 +1,5 @@
-# This code is standalone.
+# Author : Maniraman Periyasamy
+# This code is part of gspsa gradients repository.
 #
 # If used in your project please cite this work as described in the README file.
 #

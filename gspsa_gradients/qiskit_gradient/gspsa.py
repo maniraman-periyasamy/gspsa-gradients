@@ -1,5 +1,6 @@
-# This code is standalone in GSPSA but depends on qiskit.
-#
+# Author : Maniraman Periyasamy
+# This code is part of gspsa gradients repository.
+# This code uses parts of code snippets from qiskit
 # If used in your project please cite this work as described in the README file.
 #
 # This code is licensed under the Apache License, Version 2.0. You may
