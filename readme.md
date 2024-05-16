@@ -13,12 +13,31 @@ The library requires an installation of `python > 3.9 `, and following libraries
     - `qiskit`
     - `qiskit-algorithms`
 - Tensorflow-Quantum version
-- `tensorflow`
-- `tesnroflow-quantum`
+    - `tensorflow`
+    - `tesnroflow-quantum`
 
-The package `gspsa-gradients` can be installed locally via:
-```
-git clone https://github.com/maniraman-periyasamy/gspsa-gradients.git
-cd gspsa-gradients
-pip install -e .
-```
+The package can be installed via pip:
+- package without other dependencies
+    ```bash
+    pip install gspsa-gradients
+    ```
+
+- To install the with qiskit dependency:
+
+    ```bash
+    pip install gspsa-gradients[qiskit]
+    ```
+- To install the with tfq dependency:
+
+    ```bash
+    pip install gspsa-gradients[tfq]
+    ```
+
+- The package `gspsa-gradients` can be installed locally via:
+    ```
+    git clone https://github.com/maniraman-periyasamy/gspsa-gradients.git
+    cd gspsa-gradients
+    pip install -e .
+    ```
+
+
