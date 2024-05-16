@@ -40,4 +40,27 @@ The package can be installed via pip:
     pip install -e .
     ```
 
+## Usage and Examples
 
+- Qiskit version
+    ```python
+    
+    from gspsa_gradients.qiskit_gradient import GSPSAEstimatorGradient
+    from qiskit.primitives import Estimator
+    gradient = GSPSAEstimatorGradient(total_steps = num_epochs, estimator=Estimator(), num_observables = len(observables), 
+        tau=0.5, spsa_epsilon=0.01, damping_coeff=0.5)
+    qnn1 = EstimatorQNN(
+        circuit=qc, input_params=inputParams, weight_params=circuitParams, observables=observables, gradient=gradient, input_gradients=False)
+
+    ...
+    
+    ```
+- TFQ verison
+    ```python
+
+    from gspsa_gradients.tfq_gradient import GSPSAGradient
+    diff=GSPSAGradient(total_steps=num_epochs, input_dims=num_inputs, tau=0.5, spsa_epsilon=0.01, damping_coeff=0.5)
+    quantum_layer = tfq.layers.ControlledPQC(circuit, observables, differentiator=diff, repetitions=1024) # make repitions to 0 for exact expectation value estimation 
+
+    ...
+    ```
